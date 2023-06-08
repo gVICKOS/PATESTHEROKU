@@ -27,9 +27,11 @@ from tensorflow.keras.optimizers import Adam
 from sklearn.metrics import r2_score
 from PIL import Image
 
-pickle_in = open('mymodel.pkl', 'rb')
+#pickle_in = open('mymodel.pkl', 'rb')
 #load_model = pickle.load(pickle_in) 
-load_model = joblib.load(pickle_in)
+#load_model = joblib.load(pickle_in)
+with io.BufferedReader("mymodel.pkl") as pickle_file:
+    model = pickle.load(pickle_file)
 
 def main():
     html_temp = """
