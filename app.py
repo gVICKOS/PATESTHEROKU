@@ -27,7 +27,7 @@ from tensorflow.keras.optimizers import Adam
 from sklearn.metrics import r2_score
 from PIL import Image
 
-pickle_in = open('mymodel.pkl', 'rb')
+pickle_in = open('runmodel.pkl','rb')
 load_model = pickle.load(pickle_in) 
 #load_model = joblib.load(pickle_in)
 #load_model = joblib.load('lasttest.pkl')
