@@ -28,7 +28,8 @@ from sklearn.metrics import r2_score
 from PIL import Image
 
 pickle_in = open('mymodel.pkl', 'rb')
-load_model = pickle.load(pickle_in) 
+#load_model = pickle.load(pickle_in) 
+load_model = joblib.load(pickle_in)
 
 def main():
     html_temp = """
