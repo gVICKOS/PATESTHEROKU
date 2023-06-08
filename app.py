@@ -26,8 +26,9 @@ from tensorflow.keras.layers import Dense
 from tensorflow.keras.optimizers import Adam
 from sklearn.metrics import r2_score
 from PIL import Image
+from sklearn.linear_model import LinearRegression
 
-pickle_in = open('runmodel.pkl','rb')
+pickle_in = open('Testmodel.pkl','rb')
 load_model = pickle.load(pickle_in) 
 #load_model = joblib.load(pickle_in)
 #load_model = joblib.load('lasttest.pkl')
