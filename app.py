@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import joblib
 import pickle 
 from sklearn import preprocessing
 from sklearn.neighbors import KNeighborsClassifier
@@ -28,10 +27,10 @@ from tensorflow.keras.optimizers import Adam
 from sklearn.metrics import r2_score
 from PIL import Image
 
-#pickle_in = open('mymodel.pkl', 'rb')
-#load_model = pickle.load(pickle_in) 
+pickle_in = open('mymodel.pkl', 'rb')
+load_model = pickle.load(pickle_in) 
 #load_model = joblib.load(pickle_in)
-load_model = joblib.load('lasttest.pkl')
+#load_model = joblib.load('lasttest.pkl')
 
 def main():
     html_temp = """
