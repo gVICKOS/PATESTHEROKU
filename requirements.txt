@@ -8,4 +8,3 @@ tensorflow
 pillow
 openpyxl
 keras
-io==1.2.3
