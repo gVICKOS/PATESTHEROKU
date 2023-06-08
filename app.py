@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import io
 import pickle 
 from sklearn import preprocessing
 from sklearn.neighbors import KNeighborsClassifier
@@ -31,8 +30,7 @@ from PIL import Image
 #pickle_in = open('mymodel.pkl', 'rb')
 #load_model = pickle.load(pickle_in) 
 #load_model = joblib.load(pickle_in)
-with io.BufferedReader("mymodel.pkl") as pickle_file:
-    model = pickle.load(pickle_file)
+load_model = joblib.load('lasttest.pkl')
 
 def main():
     html_temp = """
